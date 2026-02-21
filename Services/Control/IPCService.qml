@@ -193,6 +193,25 @@ Singleton {
     function removeFromHistory(id: string): bool {
       return NotificationService.removeFromHistory(id);
     }
+
+    function readAll() {
+      NotificationService.updateLastSeenTs();
+    }
+
+    function readLast() {
+      var since = NotificationService.lastSeenTs;
+      var oldest = -1;
+      for (var i = 0; i < NotificationService.historyList.count; i++) {
+        var item = NotificationService.historyList.get(i);
+        var ts = item.timestamp instanceof Date ? item.timestamp.getTime() : item.timestamp;
+        if (ts > since && (oldest === -1 || ts < oldest))
+          oldest = ts;
+      }
+      if (oldest !== -1) {
+        NotificationService.lastSeenTs = oldest;
+        NotificationService.saveState();
+      }
+    }
   }
 
   IpcHandler {

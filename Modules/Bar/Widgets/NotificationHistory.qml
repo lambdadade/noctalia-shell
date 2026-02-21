@@ -62,7 +62,7 @@ NIconButton {
   tooltipText: NotificationService.doNotDisturb ? I18n.tr("tooltips.open-notification-history-enable-dnd") : I18n.tr("tooltips.open-notification-history-enable-dnd")
   tooltipDirection: BarService.getTooltipDirection(screen?.name)
   colorBg: Style.capsuleColor
-  colorFg: Color.resolveColorKey(iconColorKey)
+  colorFg: count > 0 ? Color.mError : Color.resolveColorKey(iconColorKey)
   border.color: Style.capsuleBorderColor
   border.width: Style.capsuleBorderWidth
   visible: !((hideWhenZero && NotificationService.historyList.count === 0) || (hideWhenZeroUnread && count === 0))

@@ -54,13 +54,19 @@ ColumnLayout {
     }
   }
 
-  NText {
+  TextEdit {
     visible: root.description !== ""
     Layout.fillWidth: true
     text: root.description
-    pointSize: Style.fontSizeS
+    font.family: Settings.data.ui.fontDefault
+    font.pointSize: Math.max(1, Style.fontSizeS * Settings.data.ui.fontDefaultScale * Style.uiScaleRatio)
+    font.weight: Style.fontWeightMedium
     color: root.descriptionColor
     wrapMode: Text.WordWrap
-    textFormat: Text.StyledText
+    textFormat: TextEdit.StyledText
+    readOnly: true
+    selectByMouse: true
+    selectedTextColor: Color.mOnPrimary
+    selectionColor: Color.mPrimary
   }
 }
