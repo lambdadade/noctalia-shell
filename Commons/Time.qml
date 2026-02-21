@@ -22,6 +22,30 @@ Singleton {
     return Math.floor(root.now / 1000);
   }
 
+  // ISO 8601 week number (01-53) for the current date
+  readonly property int isoWeekNumber: getISOWeekNumber(root.now)
+
+  // Compute ISO 8601 week number for any given date
+  function getISOWeekNumber(date) {
+    var d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+    var dayNum = d.getUTCDay() || 7; // Sunday = 7 in ISO 8601
+    d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+    var yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+    return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+  }
+
+  // Apply a clock format string, replacing the custom WW token with the
+  // ISO 8601 week number (zero-padded to 2 digits) before locale formatting.
+  function applyClockFormat(format, date) {
+    var d = date || root.now;
+    var result = I18n.locale.toString(d, format.trim());
+    if (result.indexOf("WW") !== -1) {
+      var weekNum = getISOWeekNumber(d);
+      result = result.split("WW").join(String(weekNum).padStart(2, '0'));
+    }
+    return result;
+  }
+
   // Timer state (for countdown/stopwatch)
   property bool timerRunning: false
   property bool timerStopwatchMode: false

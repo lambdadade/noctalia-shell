@@ -82,7 +82,7 @@ Item {
           spacing: Settings.data.bar.showCapsule ? -5 : -3
           Repeater {
             id: repeater
-            model: I18n.locale.toString(now, formatHorizontal.trim()).split("\\n")
+            model: Time.applyClockFormat(formatHorizontal, now).split("\\n")
             NText {
               visible: text !== ""
               text: modelData
@@ -119,7 +119,7 @@ Item {
           anchors.centerIn: parent
           spacing: -2
           Repeater {
-            model: I18n.locale.toString(now, formatVertical.trim()).split(" ")
+            model: Time.applyClockFormat(formatVertical, now).split(" ")
             delegate: NText {
               visible: text !== ""
               text: modelData
@@ -168,7 +168,7 @@ Item {
   // Build tooltip text with formatted time/date
   function buildTooltipText() {
     if (tooltipFormat && tooltipFormat.trim() !== "") {
-      return I18n.locale.toString(now, tooltipFormat.trim());
+      return Time.applyClockFormat(tooltipFormat, now);
     }
     // Fallback to default if no format is set
     return I18n.tr("common.calendar"); // Defaults to "Calendar"

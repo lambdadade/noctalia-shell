@@ -203,6 +203,12 @@ Rectangle {
               "token": "dddd",
               "description": I18n.tr("widgets.datetime-tokens.day-full"),
               "example": "Monday"
+            },
+            {
+              "category": "Week",
+              "token": "WW",
+              "description": I18n.tr("widgets.datetime-tokens.week-iso-number"),
+              "example": ""
             }
           ]
 
@@ -347,7 +353,9 @@ Rectangle {
 
                 NText {
                   anchors.centerIn: parent
-                  text: I18n.locale.toString(root.sampleDate, modelData.token)
+                  text: modelData.token === "WW"
+                    ? String(Time.isoWeekNumber).padStart(2, '0')
+                    : I18n.locale.toString(root.sampleDate, modelData.token)
                   color: tokenMouseArea.containsMouse ? Color.mOnPrimary : Color.mSurfaceVariant
                   pointSize: Style.fontSizeS
 
@@ -381,6 +389,8 @@ Rectangle {
       return [Color.mTertiary, Color.mOnTertiary];
     case "AM/PM":
       return [Color.mError, Color.mOnError];
+    case "Week":
+      return [Color.mTertiary, Color.mOnTertiary];
     case "Timezone":
       return [Color.mOnSurface, Color.mSurface];
     case "Common":

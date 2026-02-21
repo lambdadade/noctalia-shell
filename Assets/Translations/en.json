@@ -1978,6 +1978,7 @@
       "second-leading-zero": "Second with leading zero (00-59)",
       "second-no-leading-zero": "Second without leading zero (0-59)",
       "timezone-abbreviation": "Timezone abbreviation",
+      "week-iso-number": "ISO 8601 week number with leading zero (01-53)",
       "year-four-digit": "Year as four-digit number",
       "year-two-digit": "Year as two-digit number (00-99)"
     },
