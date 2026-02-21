@@ -4,6 +4,27 @@ Changes made on top of upstream [noctalia-shell](https://github.com/end-4/dots-h
 
 ---
 
+## Clock widget
+
+### Calendar week token `WW` in format strings
+
+All clock format strings (bar horizontal/vertical/tooltip, desktop minimal style)
+now support a custom `WW` token that expands to the ISO 8601 week number,
+zero-padded to two digits (e.g. `08`).
+
+Example format: `HH:mm\nCW WW` → `14:30\nCW 08`
+
+The token is also listed as a clickable entry in the format token helper panel
+inside clock widget settings, with a live example showing the current week number.
+
+Files changed: `Commons/Time.qml`, `Modules/Bar/Widgets/Clock.qml`,
+`Modules/DesktopWidgets/Widgets/DesktopClock.qml`,
+`Modules/Panels/Settings/Bar/WidgetSettings/ClockSettings.qml`,
+`Modules/Panels/Settings/DesktopWidgets/WidgetSettings/ClockSettings.qml`,
+`Widgets/NDateTimeTokens.qml`, `Assets/Translations/en.json`
+
+---
+
 ## UX
 
 ### Selectable description text in settings (`Widgets/NLabel.qml`)
