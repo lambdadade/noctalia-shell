@@ -20,6 +20,22 @@ configured icon color when the unread count reaches zero.
 
 ---
 
+## Launcher
+
+### `launcher translate` IPC command (`Services/Control/IPCService.qml`)
+
+Toggles the launcher into translate mode (`>translate ` prefix) on the current screen.
+
+- If the launcher is closed, opens it with `>translate ` pre-filled
+- If it is already in translate mode, closes it
+- If it is open in a different mode, switches to translate mode
+
+```sh
+qs -c noctalia-shell ipc call launcher translate
+```
+
+---
+
 ## IPC
 
 ### `notifications readAll`
