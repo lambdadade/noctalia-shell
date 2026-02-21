@@ -316,6 +316,19 @@ Singleton {
                                               }
                                             }, Settings.data.appLauncher.overviewLayer);
     }
+    function translate() {
+      root.screenDetector.withCurrentScreen(screen => {
+                                              var searchText = PanelService.getLauncherSearchText(screen);
+                                              var isInTranslateMode = searchText.startsWith(">translate");
+                                              if (!PanelService.isLauncherOpen(screen)) {
+                                                PanelService.openLauncherWithSearch(screen, ">translate ");
+                                              } else if (isInTranslateMode) {
+                                                PanelService.closeLauncher(screen);
+                                              } else {
+                                                PanelService.setLauncherSearchText(screen, ">translate ");
+                                              }
+                                            }, Settings.data.appLauncher.overviewLayer);
+    }
   }
 
   IpcHandler {
