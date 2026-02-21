@@ -1978,6 +1978,7 @@
       "second-leading-zero": "앞에 0이 있는 초 (00-59)",
       "second-no-leading-zero": "앞에 0이 없는 초 (0-59)",
       "timezone-abbreviation": "시간대 약어",
+      "week-iso-number": "앞자리 0 포함 ISO 8601 주 번호 (01-53)",
       "year-four-digit": "4자리 연도",
       "year-two-digit": "2자리 연도 (00-99)"
     },

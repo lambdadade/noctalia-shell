@@ -1978,6 +1978,7 @@
       "second-leading-zero": "Sıfır ile başlayan saniye (00-59)",
       "second-no-leading-zero": "Sıfır olmadan saniye (0-59)",
       "timezone-abbreviation": "Saat dilimi kısaltması",
+      "week-iso-number": "Başında sıfır olan ISO 8601 hafta numarası (01-53)",
       "year-four-digit": "Dört haneli sayı olarak yıl",
       "year-two-digit": "İki haneli sayı olarak yıl (00-99)"
     },

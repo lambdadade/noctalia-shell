@@ -1978,6 +1978,7 @@
       "second-leading-zero": "Seconde met voorloopnul (00-59)",
       "second-no-leading-zero": "Seconde zonder voorloopnul (0-59)",
       "timezone-abbreviation": "Afkorting van de tijdzone",
+      "week-iso-number": "ISO 8601 weeknummer met voorloopnul (01-53)",
       "year-four-digit": "Jaar als viercijferig getal",
       "year-two-digit": "Jaar als tweecijferig getal (00-99)"
     },

@@ -1953,6 +1953,7 @@
       "second-leading-zero": "Sekund med null føre (00-59)",
       "second-no-leading-zero": "Sekund utan null føre (0-59)",
       "timezone-abbreviation": "Forkorta tidssone",
+      "week-iso-number": "ISO 8601 vekenummer med leiande null (01-53)",
       "year-four-digit": "År som tal med fire siffer",
       "year-two-digit": "År som tal med to siffer (00-99)"
     },

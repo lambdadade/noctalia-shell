@@ -1978,6 +1978,7 @@
       "second-leading-zero": "ゼロ埋めありの秒 (00-59)",
       "second-no-leading-zero": "ゼロ埋めなしの秒 (0-59)",
       "timezone-abbreviation": "タイムゾーンの略称",
+      "week-iso-number": "ISO 8601 週番号（先頭ゼロ付き）(01-53)",
       "year-four-digit": "4桁の西暦",
       "year-two-digit": "2桁の西暦 (00-99)"
     },

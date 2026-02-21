@@ -1978,6 +1978,7 @@
       "second-leading-zero": "Másodperc nullával kezdve (00-59)",
       "second-no-leading-zero": "Másodperc nem nullával kezdve (0-59)",
       "timezone-abbreviation": "Időzóna rövidítése",
+      "week-iso-number": "ISO 8601 hétszám vezető nullával (01-53)",
       "year-four-digit": "Év négy számjeggyel",
       "year-two-digit": "Év két számjeggyel (00-99)"
     },

@@ -1811,6 +1811,7 @@
       "second-leading-zero": "Çirke bi sifira destpêkê (00-59)",
       "second-no-leading-zero": "Çirke bê sifira destpêkê (0-59)",
       "timezone-abbreviation": "Kurteriya herêma demê",
+      "week-iso-number": "Jimara hefteyê ya ISO 8601 bi sifra pêşeng (01-53)",
       "year-four-digit": "Sal wekî çar-jimar",
       "year-two-digit": "Sal wekî du-jimar (00-99)"
     },

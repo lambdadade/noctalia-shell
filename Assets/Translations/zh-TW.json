@@ -1978,6 +1978,7 @@
       "second-leading-zero": "帶零的秒鐘 (00-59)",
       "second-no-leading-zero": "不帶零的秒鐘 (0-59)",
       "timezone-abbreviation": "時區縮寫",
+      "week-iso-number": "ISO 8601 週數，帶前導零 (01-53)",
       "year-four-digit": "四位數的西曆年份",
       "year-two-digit": "二位數的西曆年份 (00-99)"
     },

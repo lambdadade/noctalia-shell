@@ -1978,6 +1978,7 @@
       "second-leading-zero": "Sekund med inledande nolla (00-59)",
       "second-no-leading-zero": "Sekund utan inledande nolla (0-59)",
       "timezone-abbreviation": "Förkortning av tidszon",
+      "week-iso-number": "ISO 8601 veckonummer med inledande nolla (01-53)",
       "year-four-digit": "År som fyrsiffrigt tal",
       "year-two-digit": "År som tvåsiffrigt tal (00-99)"
     },

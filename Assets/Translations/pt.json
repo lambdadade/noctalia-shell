@@ -1978,6 +1978,7 @@
       "second-leading-zero": "Segundo com zero à esquerda (00-59)",
       "second-no-leading-zero": "Segundo sem zero à esquerda (0-59)",
       "timezone-abbreviation": "Abreviação do fuso horário",
+      "week-iso-number": "Número da semana ISO 8601 com zero à esquerda (01-53)",
       "year-four-digit": "Ano com quatro dígitos",
       "year-two-digit": "Ano com dois dígitos (00-99)"
     },

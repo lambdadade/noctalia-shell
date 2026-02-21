@@ -1978,6 +1978,7 @@
       "second-leading-zero": "Sekunda z zerem wiodącym (00-59)",
       "second-no-leading-zero": "Sekunda bez zera wiodącego (0-59)",
       "timezone-abbreviation": "Skrót strefy czasowej",
+      "week-iso-number": "Numer tygodnia ISO 8601 z wiodącym zerem (01-53)",
       "year-four-digit": "Rok jako liczba czterocyfrowa",
       "year-two-digit": "Rok jako liczba dwucyfrowa (00-99)"
     },
