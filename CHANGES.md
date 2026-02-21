@@ -21,7 +21,7 @@ Files changed: `Commons/Time.qml`, `Modules/Bar/Widgets/Clock.qml`,
 `Modules/DesktopWidgets/Widgets/DesktopClock.qml`,
 `Modules/Panels/Settings/Bar/WidgetSettings/ClockSettings.qml`,
 `Modules/Panels/Settings/DesktopWidgets/WidgetSettings/ClockSettings.qml`,
-`Widgets/NDateTimeTokens.qml`, `Assets/Translations/en.json`
+`Widgets/NDateTimeTokens.qml`, `Assets/Translations/*.json` (17 languages)
 
 ---
 
